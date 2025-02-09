@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature's Platter</title>
+    <!-- favicon Start -->
+    <link rel="shortcut icon" href="/assets/logo-header.png" type="image/x-icon">
+    <!-- favicon End -->
+    <!-- Font awesome cdn link start -->
+    <script src="https://kit.fontawesome.com/7a4507e9b3.js" crossorigin="anonymous"></script>
+    <!-- Font awesome cdn link start -->
+    <!-- google font cdn start -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- google font cdn end -->
+    <!-- tailwind and DaisyUi cdn start -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind and DaisyUi cdn end -->
+    <!-- Tailwind CSS Configuration start-->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#111111',
+                        secondary: '#179800',
+                        btnColor: '#179800'
+                    },
+                    fontFamily: {
+                        Sora: ['Sora', 'serif'],
+                    },
+                    backgroundImage: {
+                        bannerBg: "linear-gradient( rgba(17, 17, 17, 0),rgb(17, 17, 17)),url('./images/banner.png')",
+                        slider1: "linear-gradient( rgba(17, 17, 17, 0),rgb(17, 17, 17)),url('./images/slider-1.jpg')",
+                        slider2: "linear-gradient( rgba(17, 17, 17, 0),rgb(17, 17, 17)),url('./images/slider-2.jpg')",
+                        slider3: "linear-gradient( rgba(17, 17, 17, 0),rgb(17, 17, 17)),url('./images/slider-3.jpg')",
+                    },
+                }
+            }
+        }
+    </script>
+    <!-- Tailwind CSS Configuration End-->
+</head>
+
+<body class="font-Sora">
+    <!-- Header Section Start -->
+    <header class="w-11/12 mx-auto">
+        <!-- Navbar Section Start -->
+        <nav class="py-2 ">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <a class=""><img class="w-4/6  lg:w-5/6" src="./assets/logo-header.png" alt=""></a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1 font-normal text-lg text-primary">
+                        <li><a>Product</a></li>
+                        <li><a>Services</a></li>
+                        <li><a>Contact us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end flex items-center gap-5">
+                    <div class="font-thin hidden sm:flex">
+                        <a href="#"><i class="fa-solid fa-magnifying-glass me-2"></i></a>
+                        <a href="#"><i class="fa-solid fa-cart-shopping "></i></a>
+                    </div>
+                    <div class="hidden sm:flex">
+                        <a href="#"><button
+                                class="me-1 transition-all duration-300 ease-in-out border border-secondary hover:bg-secondary text-primary hover:text-white py-2 px-5 rounded-lg ">Login</button></a>
+                        <a href="#"><button
+                                class="transition-all duration-300 ease-in-out border border-secondary bg-secondary hover:bg-transparent text-white hover:text-primary py-2 px-5 rounded-lg">Register</button></a>
+                    </div>
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <i class="fa-solid fa-bars text-2xl font-bold"></i>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] right-0 mt-3 w-52 p-2 shadow font-normal text-lg text-primary">
+                            <li><a>Product</a></li>
+                            <li><a>Services</a></li>
+                            <li><a>Contact us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Navbar Section End -->
+    </header>
+    <!-- Header Section End -->
+</body>
+
+</html>
